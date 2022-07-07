@@ -5,6 +5,8 @@ import styled from "styled-components";
 import { ThemeContext } from "./Components/ThemeContext/themeContext";
 import { useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CountryDetail from "./Components/MainContent/CountryDetail";
+import Footer from "./Components/Footer";
 
 function App() {
   const themeContext = useContext(ThemeContext);
@@ -16,10 +18,13 @@ function App() {
           <Routes>
             <Route exact path='/' element={<MainContent />}/>
             <Route exact path='/region/:regionName' element={<MainContent />}/>
+            <Route exact path='/country/:countryName' element={<CountryDetail />}/>
+            <Route exact path='/search/:name' element={<MainContent />}/>
           </Routes>
         </ContentContainer>
+        <Footer/>
       </Router>
-    </AppContainer>
+    </AppContainer> 
   );
 }
 
