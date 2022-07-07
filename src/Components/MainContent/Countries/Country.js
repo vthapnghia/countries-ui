@@ -38,10 +38,12 @@ export default Country;
 const CountryCard = styled.div`
   max-width: 420px;
   width: 100%;
+  // chỉnh màu độ sáng, âm bản,...
   filter: brightness(1);
   overflow: hidden;
   border-radius: 4px;
   margin-bottom: 12px;
+  // chỉ định văn bản có được chọn hay không
   user-select: none;
   &:hover {
     filter: brightness(0.9);

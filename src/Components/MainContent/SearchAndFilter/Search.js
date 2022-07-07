@@ -61,8 +61,8 @@ const SearchElement = styled.div`
     width: 100%;
     padding: 2px;
     text-align: center;
-    background: #aaa; !important;
-    box-shadow: none; !important;
+    background: #aaa!important;
+    box-shadow: none!important;
     opacity: 75%;
     transition: opacity 0.2s linear;
     &:hover {

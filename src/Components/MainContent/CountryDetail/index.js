@@ -66,7 +66,7 @@ const Wrapper = styled.div`
       filter: brightness(1);
       font-weight: bold;
       cursor: default;
-      useselect: none;
+      use-select: none;
     }
   }
 `;

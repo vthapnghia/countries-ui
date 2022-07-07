@@ -3,15 +3,11 @@ import { FaChevronDown } from "react-icons/fa";
 import styled from "styled-components";
 import { ThemeContext } from "../../ThemeContext/themeContext";
 import Options from "./Options";
-import {useParams} from "react-router-dom";
 
 function Filter(props) {
   const themeContext = useContext(ThemeContext);
   const refSelect = useRef(null);
   const [isShowOptions, setIsShowOptions] = useState(false);
-  const {regionName} = useParams();
-  
-  console.log(regionName) 
 
   const handleOptions = (e) => {
     if (refSelect.current)
